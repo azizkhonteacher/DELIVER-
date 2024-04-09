@@ -1,0 +1,19 @@
+// colors
+$color-1: #134A45;
+$color-2: #E5E8EB;
+$color-3: #B961CD;
+
+
+
+
+
+
+
+
+// mixin's
+@mixin font($w, $fz, $lh:1){
+    font-family: 'Roboto', sans-serif;
+    font-weight: $w;
+    font-size: $fz + px;
+    line-height: $lh;
+}

@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Thin.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Light.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Black.ttf');
+    font-style: normal;
+    font-weight: 900;
+}

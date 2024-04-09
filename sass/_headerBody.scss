@@ -1,0 +1,97 @@
+.header-body {
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    gap: 90px;
+    position: relative;
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      width: 100%;
+      align-items: start;
+      .title h2 {
+        color: $color-1;
+        @include font(400, 63, 1.2);
+      }
+      .text p {
+        color: $color-1;
+        @include font(400, 20, 1.4);
+        padding: 40px 0 57px;
+      }
+      .header-btn {
+        color: $color-2;
+        @include font(400, 15, 2);
+        background: $color-1;
+        border: none;
+        padding: 0 68px 0 25px;
+        &:active {
+          opacity: 0.9;
+        }
+      }
+    }
+
+    .card-imgs {
+      display: flex;
+      gap: 29px;
+      align-items: start;
+      position: relative;
+      img {
+        width: 264px;
+        height: 396px;
+        object-fit: contain;
+      }
+      .imgs {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+        img:first-child {
+          width: 233px;
+          height: 247px;
+          object-fit: cover;
+          background: #000;
+          z-index: 1;
+        }
+        img:last-child {
+          width: 187px;
+          height: 197px;
+          object-fit: cover;
+        }
+      }
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+      }
+      #shape-1 {
+        background: $color-1;
+        width: 90px;
+        height: 90px;
+        right: -53px;
+        top: 19px;
+      }
+      #shape-2 {
+        background: $color-3;
+        width: 50px;
+        height: 50px;
+        left: 39px;
+        bottom: 0;
+      }
+    }
+    .vector-1 {
+      width: 400px;
+      height: 62px;
+      background: url("../img/Vector-1.svg") center/contain no-repeat;
+    }
+    #vector-1 {
+      position: absolute;
+      left: -39px;
+      bottom: -5px;
+      overflow: hidden;
+    }
+  }
+}
