@@ -11,10 +11,11 @@
     align-items: center;
     justify-content: space-between;
     transform: translateY(23px);
+    // gap: 86px;
     ul {
       display: flex;
       flex-direction: column;
-      width: 100% / 3;
+      // width: calc(100% / 3);
       gap: 3px;
       li {
         color: #fff;

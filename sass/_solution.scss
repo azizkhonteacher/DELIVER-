@@ -1,0 +1,64 @@
+.solution {
+  padding: 99px 0 80px;
+  background: #fff;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+  &-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 702px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 30px;
+    p {
+      color: $color-1;
+      @include font(400, 13, 1.5);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    h2 {
+      color: $color-1;
+      @include font(400, 49, 1.2);
+      letter-spacing: 0.6px;
+    }
+  }
+
+  &-wrap {
+    display: flex;
+    width: 100%;
+    .item {
+      width: calc(100% / 2);
+    }
+    .hero-1{
+        background: $color-1;
+    }
+    .hero-2{
+        background: $color-5;
+        padding: 437px 0 46px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        h2{
+            color: $color-8;
+            @include font(400, 40, 1);
+            letter-spacing: 0.2px;
+        }
+        p{
+            color: $color-8;
+            @include font(400, 17, 1.6);
+            letter-spacing: 0.2px;
+        }
+        .pi-1{
+            padding: 32px 111px 94px 92px;
+        }
+        .pi-2{
+            padding: 0 105px 0 86px;
+        }
+    }
+  }
+}

@@ -272,7 +272,6 @@ header .nav .container .card li:active {
 .patients .hero-text ul {
   display: flex;
   flex-direction: column;
-  width: 100%/3;
   gap: 3px;
 }
 .patients .hero-text ul li {
@@ -353,4 +352,80 @@ header .nav .container .card li:active {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.solution {
+  padding: 99px 0 80px;
+  background: #fff;
+}
+.solution .container {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+.solution-name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 702px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+}
+.solution-name p {
+  color: #134A45;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.solution-name h2 {
+  color: #134A45;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+}
+.solution-wrap {
+  display: flex;
+  width: 100%;
+}
+.solution-wrap .item {
+  width: 50%;
+}
+.solution-wrap .hero-1 {
+  background: #134A45;
+}
+.solution-wrap .hero-2 {
+  background: #96C9E9;
+  padding: 437px 0 46px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.solution-wrap .hero-2 h2 {
+  color: #CFD4D8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+.solution-wrap .hero-2 p {
+  color: #CFD4D8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+.solution-wrap .hero-2 .pi-1 {
+  padding: 32px 111px 94px 92px;
+}
+.solution-wrap .hero-2 .pi-2 {
+  padding: 0 105px 0 86px;
 }/*# sourceMappingURL=main.css.map */
