@@ -12,9 +12,15 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 @import "./values";
 @import "./nav";
 @import "./headerBody";
+@import "./slide";
+@import "./patients";
