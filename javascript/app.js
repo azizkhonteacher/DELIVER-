@@ -1,7 +1,7 @@
 // inclusive ichidagi % li aylana qiymatlari
 
-let shape1Qiymati = 12;
-let shape2Qiymati = 76;
+let shape1Qiymati = 82;
+let shape2Qiymati = 52;
 const shape_1 = document.getElementById("cub-shape-1");
 const shape_2 = document.getElementById("cub-shape-2");
 const shapeValue = document.getElementById("shape-value");
