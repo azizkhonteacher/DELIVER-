@@ -435,6 +435,18 @@ header .nav .container .card li:active {
   background-color: #CFD4D8;
   position: relative;
 }
+.inclusive .container {
+  position: relative;
+  overflow: hidden;
+}
+.inclusive .container .vector {
+  position: absolute;
+  width: 335px;
+  height: 156px;
+  background: url("../img/Vector-2.svg") center/contain no-repeat;
+  right: 0;
+  top: 0;
+}
 .inclusive-title {
   display: flex;
   flex-direction: column;
@@ -657,4 +669,103 @@ header .nav .container .card li:active {
   transform: translate(-50%, -50%);
   position: absolute;
   background: #134A45;
+}
+.inclusive .bloc {
+  display: inline-block;
+  height: 886px;
+  width: 1409px;
+  background: #508883;
+  position: absolute;
+  bottom: -38px;
+  left: 941px;
+}
+
+.violet {
+  background-color: #E5E8EB;
+  padding: 100px 0 110px;
+  position: relative;
+}
+.violet .container {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 120px;
+}
+.violet-body-info {
+  max-width: 428px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.violet-body-info .h-title {
+  color: #134A45;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.violet-body-info .title-name {
+  color: #134A45;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+}
+.violet-body-info .p-text {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-top: 5px;
+}
+.violet-body-info .p-text .text {
+  color: #134A45;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+.violet-body-img {
+  max-width: 550px;
+  width: 100%;
+  height: 476px;
+  position: relative;
+}
+.violet-body-img::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 87px;
+  background: url("../img/Vector-3.svg") center/contain no-repeat;
+  right: -30px;
+  top: 0;
+}
+.violet-body-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: #B961CD;
+  bottom: -20px;
+}
+.violet-body-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.violet .shape-3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #134A45;
+  bottom: -90px;
+  left: 88px;
 }/*# sourceMappingURL=main.css.map */
