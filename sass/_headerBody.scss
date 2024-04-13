@@ -30,6 +30,7 @@
         background: $color-1;
         border: none;
         padding: 0 68px 0 25px;
+        z-index: 1;
         &:active {
           opacity: 0.9;
         }

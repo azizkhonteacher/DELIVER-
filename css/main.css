@@ -106,6 +106,7 @@ header .nav .container .card li:active {
   background: #134A45;
   border: none;
   padding: 0 68px 0 25px;
+  z-index: 1;
 }
 .header-body .card .card-info .header-btn:active {
   opacity: 0.9;
