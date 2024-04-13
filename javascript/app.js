@@ -47,29 +47,30 @@ teamSwipetLeftBtn.addEventListener("click", () => {
 });
 
 // team swiper item json data
-const teamsWiperItem = document.querySelectorAll(".swiper-items .item");
+// const teamsWiperItem = document.querySelectorAll(".swiper-items .item");
 
-const teamGetTodos = (resurse) => {
-  return new Promise((resolve, reject) => {
-    const request = new XMLHttpRequest();
-    request.addEventListener("readystatechange", () => {
-      if (request.readyState === 4 && request.status === 200) {
-        const data = JSON.parse(request.response);
-        resolve(data);
-      } else if (request.readyState === 4) {
-        reject("Ma'lumot olinmadi ?!");
-      }
-    });
-    request.open("GET", resurse);
-    request.send();
-  });
-};
+function teamGetTodos(callback) {
+  const request = new XMLHttpRequest()
+  request.addEventListener("readystatechange", () =>{
+    if(request.readyState == 4 && request.status == 200){
+      const data = JSON.parse(request.responseText)
+      callback(undefined, data)
+    }else if(request.readyState == 4){
+      callback("Ma'lumot olinmadi", undefined)
+    }
+  })
+
+  request.open('GET', 'todos.json')
+  request.send()
+  
+}
 
 
-teamGetTodos("./teamItems.json")
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+teamGetTodos((err, data) => {
+  if(data){
+    console.log(data);
+  }else if(err){
+    console.log(err);
+  }
+})
+
