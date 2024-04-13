@@ -47,7 +47,6 @@ teamSwipetLeftBtn.addEventListener("click", () => {
 });
 
 // team swiper item json data
-const teamsWiperItem = document.querySelectorAll(".swiper-items .item");
 
 const teamGetTodos =  (callback) =>  {
   const request = new XMLHttpRequest()
