@@ -829,6 +829,8 @@ header .nav .container .card li:active {
   width: 100%;
   overflow-x: scroll;
   gap: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2784313725);
+  padding: 20px;
 }
 .team-swiper .swiper-items::-webkit-scrollbar {
   display: none;
@@ -840,7 +842,6 @@ header .nav .container .card li:active {
   height: 524px;
   padding: 40px;
   align-items: start;
-  background-color: #96C9E9;
   position: relative;
 }
 .team-swiper .swiper-items div .item .title {

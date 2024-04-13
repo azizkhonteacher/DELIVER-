@@ -47,7 +47,7 @@ teamSwipetLeftBtn.addEventListener("click", () => {
 });
 
 // team swiper item json data
-// const teamsWiperItem = document.querySelectorAll(".swiper-items .item");
+const teamsWiperItem = document.querySelectorAll(".swiper-items .item");
 
 const teamGetTodos =  (callback) =>  {
   const request = new XMLHttpRequest()
@@ -60,7 +60,7 @@ const teamGetTodos =  (callback) =>  {
     }
   })
 
-  request.open('GET', 'todos.json')
+  request.open('GET', 'json/team-items.json')
   request.send()
   
 }
@@ -68,7 +68,22 @@ const teamGetTodos =  (callback) =>  {
 
 teamGetTodos((err, data) => {
   if(data){
-    console.log(data);
+    data.forEach((product) => {
+      swiperItems.innerHTML += 
+      `
+      <div>
+              <div class="item" style="background-color: ${product.itemBgColor}">
+                <h2 class="title">${product.itemTitle}</h2>
+
+                <p class="text">${product.itemText}</p>
+
+                <button class="swiper-item-btn">
+                  <img src="./img/right_icon.svg" alt="ut" />
+                </button>
+              </div>
+            </div>
+      `
+    });
   }else if(err){
     console.log(err);
   }
