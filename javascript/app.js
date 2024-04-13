@@ -49,7 +49,7 @@ teamSwipetLeftBtn.addEventListener("click", () => {
 // team swiper item json data
 // const teamsWiperItem = document.querySelectorAll(".swiper-items .item");
 
-function teamGetTodos(callback) {
+const teamGetTodos =  (callback) =>  {
   const request = new XMLHttpRequest()
   request.addEventListener("readystatechange", () =>{
     if(request.readyState == 4 && request.status == 200){
