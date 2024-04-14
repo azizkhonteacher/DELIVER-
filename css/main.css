@@ -220,6 +220,18 @@ header .nav .container .card li:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.slide-gallery {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+.slide-gallery div {
+  width: 100%;
+  flex: none;
+}
+.slide-gallery::-webkit-scrollbar {
+  display: none;
+}
 .slide-imgs {
   width: 100%;
   display: flex;

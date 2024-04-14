@@ -65,7 +65,6 @@ const teamGetTodos = (callback) => {
 
 teamGetTodos((err, data) => {
   if (data) {
-    console.log(data);
     data.forEach((product) => {
       swiperItems.innerHTML += `
       <div>
@@ -84,4 +83,26 @@ teamGetTodos((err, data) => {
   } else if (err) {
     console.log(err);
   }
+});
+
+// SLIDE BLOC SWIPERINI YASAYMIZ
+
+const slideSwiper = document.querySelector(".slide-gallery");
+const slide_next = document.getElementById("slide-btn-right");
+const slide_back = document.getElementById("slide-btn-left");
+
+slideSwiper.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  slideSwiper.scrollLeft += e.deltaY;
+  slideSwiper.style.scrollBehavior = "auto";
+});
+
+slide_next.addEventListener("click", () => {
+  slideSwiper.style.scrollBehavior = "smooth";
+  slideSwiper.scrollLeft += 1100;
+});
+
+slide_back.addEventListener("click", () => {
+  slideSwiper.style.scrollBehavior = "smooth";
+  slideSwiper.scrollLeft -= 1100;
 });
