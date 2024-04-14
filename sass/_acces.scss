@@ -1,0 +1,48 @@
+.acces{
+    background-color: $color-5;
+    padding-top: 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 394px;
+    width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .title{
+        color: $color-1;
+        @include font(400, 50, 1.1);
+        width: 726px;
+        letter-spacing: 0.6px;
+    }
+    .text{
+        color: $color-1;
+        @include font(400, 20, 1.4);
+        letter-spacing: 0.2px;
+    }
+    .request{
+        display: flex;
+        cursor: pointer;
+        padding: 1px 95px 1px 45px;
+        background-color: $color-1;
+        border: none;
+
+        color: $color-4;
+        @include font(400, 25, 2.3);
+        text-align: center;
+        &:active{
+            opacity: 0.8;
+        }
+    }
+
+    .bottom-img{
+        display: flex;
+        width: 100%;
+        height: 218px;
+        background: url("../img/Vector-4.svg") center/cover no-repeat;
+    }
+}

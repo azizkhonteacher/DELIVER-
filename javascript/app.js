@@ -38,38 +38,36 @@ swiperItems.addEventListener("wheel", (evt) => {
 
 teamSwipetRightBtn.addEventListener("click", () => {
   swiperItems.style.scrollBehavior = "smooth";
-  swiperItems.scrollLeft += 380;
+  swiperItems.scrollLeft += 400;
 });
 
 teamSwipetLeftBtn.addEventListener("click", () => {
   swiperItems.style.scrollBehavior = "smooth";
-  swiperItems.scrollLeft -= 380;
+  swiperItems.scrollLeft -= 400;
 });
 
 // team swiper item json data
 
-const teamGetTodos =  (callback) =>  {
-  const request = new XMLHttpRequest()
-  request.addEventListener("readystatechange", () =>{
-    if(request.readyState == 4 && request.status == 200){
-      const data = JSON.parse(request.responseText)
-      callback(undefined, data)
-    }else if(request.readyState == 4){
-      callback("Ma'lumot olinmadi", undefined)
+const teamGetTodos = (callback) => {
+  const request = new XMLHttpRequest();
+  request.addEventListener("readystatechange", () => {
+    if (request.readyState == 4 && request.status == 200) {
+      const data = JSON.parse(request.responseText);
+      callback(undefined, data);
+    } else if (request.readyState == 4) {
+      callback("Ma'lumot olinmadi", undefined);
     }
-  })
+  });
 
-  request.open('GET', 'json/team-items.json')
-  request.send()
-  
-}
-
+  request.open("GET", "./json/team-items.json");
+  request.send();
+};
 
 teamGetTodos((err, data) => {
-  if(data){
+  if (data) {
+    console.log(data);
     data.forEach((product) => {
-      swiperItems.innerHTML += 
-      `
+      swiperItems.innerHTML += `
       <div>
               <div class="item" style="background-color: ${product.itemBgColor}">
                 <h2 class="title">${product.itemTitle}</h2>
@@ -81,10 +79,9 @@ teamGetTodos((err, data) => {
                 </button>
               </div>
             </div>
-      `
+      `;
     });
-  }else if(err){
+  } else if (err) {
     console.log(err);
   }
-})
-
+});

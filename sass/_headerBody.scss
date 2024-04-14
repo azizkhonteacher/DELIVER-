@@ -1,11 +1,9 @@
 .header-body {
-  padding: 0 0 30px;
   .card {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 10px;
-    // padding-bottom: 30px;
     gap: 90px;
     position: relative;
 
@@ -91,8 +89,9 @@
     }
     #vector-1 {
       position: absolute;
-      left: -39px;
-      bottom: -30px;
+      // left: -39px;
+      left: 0;
+      bottom: 9px;
       overflow: hidden;
     }
   }

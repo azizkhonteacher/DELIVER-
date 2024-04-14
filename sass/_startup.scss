@@ -1,0 +1,35 @@
+.startup {
+  padding: 100px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    color: $color-1;
+    @include font(400, 26, 1.5);
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 346px;
+    padding-left: 32%;
+    width: 100%;
+    gap: 60px;
+    img:first-child {
+      width: 60px;
+      height: 42px;
+      object-fit: contain;
+    }
+    img:last-child{
+        width: 133px;
+        height: 34px;
+        object-fit: contain;
+    }
+  }
+}
